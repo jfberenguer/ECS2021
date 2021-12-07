@@ -49,7 +49,7 @@ SecurityEvent
 |where TimeGenerated > ago(14d)  
 |where EventID == 4625  
 |summarize count() by tostring(EventID), bin(TimeGenerated, 1d)  
-| render Timechart   
+| render timechart   
 
 
 
